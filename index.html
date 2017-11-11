@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html lang="en-us">
+  <head>
+   <meta charset="UTF-8">
+   <title>Week 4 Game - JQuery Homework</title>
+   <!-- reset -->
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <!-- css -->
+   <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <!-- begin body and set background image -->
+ <body background = "http://gdj.graphicdesignjunction.com/wp-content/uploads/2011/03/background-pattern-design-31.jpg">
+  <div class="header">
+   <h1>Crystals Collector!</h1>
+  <br>
+  </div>
+  <!-- list rules -->
+  <div class="directions">
+   	<p> You will be given a random number at the start of the game.</p>
+   	<br>
+   	<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+   	<br>
+   	<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+   	<br>
+   	<p>The value of each crystal is hidden from you until you click on it.</p>
+   	<br>
+   	<p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </div>
+  <!-- target number box -->
+  <div class="target-number">
+   <span id="target"></span>
+  </div>
+  <!-- wins losses score keeper box -->
+  <div class="score-keeper">
+   <p>Wins: <span id="numberWins"></span></p>
+   <br>
+   <p>Losses: <span id="numberLosses"></span></p>
+   <br>
+  </div>
+  <!-- the 4 random valued gems box -->
+  <div class="buttons">
+  	<img src="assets/images/red.png" class="gems" id="red"/>
+  	<img src="assets/images/blue.png" class="gems" id="blue"/>
+   	<img src="assets/images/yellow.png" class="gems" id="yellow"/>
+  	<img src="assets/images/green.png" class="gems" id="green"/>
+  </div>
+  <div class="total-is">
+	  <p>Your total score is: </p>
+  </div>
+    <!-- total sum of numbers clicked -->
+  <div class="totalSum">
+    <p><span id="total-score"></span></p>
+  </div>
+ </body>
+ <!-- jquery and file links -->
+ <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+ <script type="text/javascript" src="assets/javascript/game.js">
+ </script>
+ </html>
